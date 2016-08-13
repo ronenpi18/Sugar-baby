@@ -21,6 +21,7 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -28,7 +29,6 @@ public class LoginActivity extends AppCompatActivity {
     private CallbackManager callbackManager;
     private FirebaseAuth mAuth;
     private String TAG = "Tomer";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-        final Intent i=new Intent(this, ProfileCreator.class);
+        final Intent i=new Intent(this, MainActivity.class);
 
         LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
         loginButton.setReadPermissions("email", "public_profile");
