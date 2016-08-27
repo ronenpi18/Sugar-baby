@@ -2,7 +2,10 @@ package tomerbu.edu.fireloginwithfacebook;
 
 import android.content.Intent;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.graphics.Color;
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 =======
 >>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 import android.os.Bundle;
@@ -12,6 +15,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,6 +23,11 @@ import android.widget.Toast;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
+=======
+import android.widget.TextView;
+import android.widget.Toast;
+
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 =======
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +42,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Created by Ronen ₪ Tom on 23/08/2016.
  */
@@ -45,16 +55,22 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "TomerBu";
 
 =======
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "TomerBu";
 
     TextView tv;
+<<<<<<< HEAD
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
+=======
 >>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
 <<<<<<< HEAD
         createChallengeBtn = (Button) findViewById(R.id.createChallenge);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -73,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, user.getPhotoUrl().toString());
         }
 =======
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -92,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, user.getEmail());
             Log.d(TAG, user.getPhotoUrl().toString());
 
+<<<<<<< HEAD
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
+=======
 >>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
             myRef.addValueEventListener(new ValueEventListener() {
                 @Override
@@ -101,6 +122,10 @@ public class MainActivity extends AppCompatActivity {
                     String value = dataSnapshot.getValue(String.class);
                     Log.d(TAG, "Value is: " + value);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    tv.setText(value);
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 =======
                     tv.setText(value);
 >>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
@@ -113,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottomBar);
             AHBottomNavigationAdapter navigationAdapter = new AHBottomNavigationAdapter(this, R.menu.bottombar);
@@ -155,6 +181,8 @@ public class MainActivity extends AppCompatActivity {
             });
 
 =======
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
         }
     }
 
@@ -178,6 +206,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+<<<<<<< HEAD
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
+=======
 >>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     }
 }

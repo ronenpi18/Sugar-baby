@@ -19,11 +19,15 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+=======
+        android:layout_marginBottom="30dp" />
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 =======
         android:layout_marginBottom="30dp" />
 >>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449

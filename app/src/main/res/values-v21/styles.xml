@@ -1,5 +1,6 @@
 <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
@@ -9,12 +10,17 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 =======
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+<<<<<<< HEAD
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
+=======
 >>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     </style>
 </resources>

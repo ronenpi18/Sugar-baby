@@ -2,11 +2,16 @@
 
     <!-- Base application theme. -->
 <<<<<<< HEAD
+<<<<<<< HEAD
     <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
+=======
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 =======
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -17,11 +22,17 @@
     </style>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+<<<<<<< HEAD
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
+=======
 >>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
