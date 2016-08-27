@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#62523c"
+    tools:context="tomerbu.edu.fireloginwithfacebook.live">
+
+        <TextView
+            android:fontFamily="sans-serif-light"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHALLENGE"
+            android:textSize="35sp"
+            android:textColor="#ffffff"
+            android:id="@+id/challengeLabel"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/challengeLabel"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/progresBarLayout">
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/timer"
+                android:layout_marginTop="10dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="0" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                >
+                <TextView
+                    android:id="@+id/timeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="60"
+                    android:textColor="#fff"
+                    android:textSize="70dip"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/timeView"
+                    android:id="@+id/secLbl"
+                    android:textColor="#ffffff"
+                    android:textSize="20dip"
+                    android:text="SECONDS"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    />
+                <TextView
+                    android:id="@+id/leftLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/secLbl"
+                    android:textColor="#ffffff"
+                    android:textSize="20dip"
+                    android:text="LEFT"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/createChallenge"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:text="you vs. metav"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:background="@drawable/createchallenge"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
+            android:layout_below="@+id/progresBarLayout"
+
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/distancePin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/distance_pin"
+            android:layout_below="@+id/createChallenge"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="11dp"/>
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="4dp"
+            android:layout_below="@+id/distancePin"
+            android:background="#ffffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceFromStart"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:textSize="40sp"
+            android:text="10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="METER"
+            android:layout_below="@+id/distanceFromStart"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"/>
+        <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "634831439728",
+    "firebase_url": "https://sugarbaby-45a6f.firebaseio.com",
+    "project_id": "sugarbaby-45a6f",
+    "storage_bucket": "sugarbaby-45a6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634831439728:android:af5e4e4060bdd176",
+        "android_client_info": {
+          "package_name": "tomerbu.edu.fireloginwithfacebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634831439728-g8t1neeja5jfevfj4uvlrfca2ipc72as.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tomerbu.edu.fireloginwithfacebook",
+            "certificate_hash": "3054EA3AA12E0DB027543F24DFA281BDFB496576"
+          }
+        },
+        {
+          "client_id": "634831439728-ogflrvua2eduv5pc7eqo4j6hajlvrbe0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRx6FfnVM13nMJLABs6y84kcsRMAquydg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634831439728-ogflrvua2eduv5pc7eqo4j6hajlvrbe0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

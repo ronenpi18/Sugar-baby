@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/runningMan"
+        android:icon="@drawable/ic_directions_run_black_48dp_2x"
+        android:title="" />
+    <item
+        android:id="@+id/Shirt"
+        android:icon="@drawable/ic_shirt"
+        android:title="" />
+    <item
+        android:id="@+id/light"
+        android:icon="@drawable/ic_trending_up_black_48dp_2x"
+        android:title="" />
+    <item
+        android:id="@+id/man"
+        android:icon="@drawable/ic_person_black_48dp_2x"
+        android:title="" />
+</menu>
