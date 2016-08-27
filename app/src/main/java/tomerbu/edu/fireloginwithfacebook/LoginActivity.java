@@ -21,16 +21,22 @@ import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
+<<<<<<< HEAD
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 import com.google.firebase.database.FirebaseDatabase;
 
 
 public class LoginActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference userListID = database.getReference("userATA");
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     private CallbackManager callbackManager;
     private FirebaseAuth mAuth;
     private String TAG = "Tomer";
@@ -44,21 +50,31 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         final Intent i=new Intent(this, MainActivity.class);
 
+<<<<<<< HEAD
         final LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
         loginButton.setReadPermissions("email", "public_profile");
 
         callbackManager = CallbackManager.Factory.create();
         //       final DatabaseReference userListID = database.getReference("UserList").child("ID");
 //        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+=======
+        LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
+        loginButton.setReadPermissions("email", "public_profile");
+
+        callbackManager = CallbackManager.Factory.create();
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 
         // Callback registration
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 handleFacebookAccessToken(loginResult.getAccessToken());
+<<<<<<< HEAD
                 userListID.child(loginResult.getAccessToken().getUserId()).setValue("numw");
 
 
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
                 startActivity(i);
 
             }

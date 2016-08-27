@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Sugar-baby-master-1.iml" filepath="$PROJECT_DIR$/Sugar-baby-master-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rush.iml" filepath="$PROJECT_DIR$/rush.iml" />
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     </modules>
   </component>
 </project>

@@ -3,6 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+<<<<<<< HEAD
     <color name="colorBg">#fec471</color>
     <color name="white">#ffffff</color>
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 </resources>

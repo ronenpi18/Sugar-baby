@@ -21,8 +21,13 @@
 
     </android.support.design.widget.AppBarLayout>
 
+<<<<<<< HEAD
  <!--   <include layout="@layout/content_login" />
 -->
+=======
+    <include layout="@layout/content_login" />
+
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -31,6 +36,7 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@android:drawable/ic_dialog_email" />
 
+<<<<<<< HEAD
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
@@ -45,4 +51,6 @@
         android:layout_alignParentStart="true" />
 
 
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 </android.support.design.widget.CoordinatorLayout>

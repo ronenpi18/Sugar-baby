@@ -1,13 +1,17 @@
 package tomerbu.edu.fireloginwithfacebook;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.graphics.Color;
+=======
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+<<<<<<< HEAD
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,6 +19,11 @@ import android.widget.Toast;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
+=======
+import android.widget.TextView;
+import android.widget.Toast;
+
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -23,6 +32,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+<<<<<<< HEAD
 /**
  * Created by Ronen ₪ Tom on 23/08/2016.
  */
@@ -34,10 +44,18 @@ public class MainActivity extends AppCompatActivity {
     public static AHBottomNavigation bottomNavigation;
     private static final String TAG = "TomerBu";
 
+=======
+public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "TomerBu";
+
+    TextView tv;
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
         createChallengeBtn = (Button) findViewById(R.id.createChallenge);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");
@@ -54,6 +72,27 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, user.getEmail());
             Log.d(TAG, user.getPhotoUrl().toString());
         }
+=======
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+
+
+        tv=(TextView)findViewById(R.id.text);
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) {
+            startActivity(new Intent(this, LoginActivity.class));
+//            Toast.makeText(MainActivity.this, user.toString(), Toast.LENGTH_SHORT).show();
+        } else {
+            myRef.setValue(user.getEmail());
+           // tv.setText(user.getDisplayName());
+            Log.d(TAG, user.getDisplayName());
+            Log.d(TAG, user.getEmail());
+            Log.d(TAG, user.getPhotoUrl().toString());
+
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
             myRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
@@ -61,6 +100,10 @@ public class MainActivity extends AppCompatActivity {
                     // whenever data at this location is updated.
                     String value = dataSnapshot.getValue(String.class);
                     Log.d(TAG, "Value is: " + value);
+<<<<<<< HEAD
+=======
+                    tv.setText(value);
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
                 }
 
                 @Override
@@ -70,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+<<<<<<< HEAD
             bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottomBar);
             AHBottomNavigationAdapter navigationAdapter = new AHBottomNavigationAdapter(this, R.menu.bottombar);
             int[] colors = {R.color.white, R.color.white, R.color.white, R.color.white};
@@ -110,5 +154,30 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+=======
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+>>>>>>> 65f2acf393abc5dd31d2d7894c6fcac74c6a1449
     }
 }
